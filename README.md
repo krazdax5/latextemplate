@@ -11,3 +11,5 @@ Composition
 Pour générer le document final (rendu), vous n'avez qu'à utiliser l'utilitaire `pdflatex`
 
 `pdflatex gabarit_travail_ets.tex`
+
+Il faut bien sûr avoir installé tous les outils et le compilateur LaTeX sur son ordinateur.
