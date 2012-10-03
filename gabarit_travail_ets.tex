@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{tabularx}
+\usepackage[pdftex]{graphicx}
+\usepackage[top=3cm, bottom=3cm, left=2.3cm, right=2.3cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{gensymb}
+\usepackage{pgfplots, pgfplotstable}
+\usepackage{tikz}
+\usetikzlibrary{scopes}
+
+% Variables à modifier %
+
+\newcommand{\nom}{Chuck Norris}
+\newcommand{\codepermanent}{ABCD000000000}
+\newcommand{\trimestre}{Automne \the\year}
+\newcommand{\departement}{Département}
+\newcommand{\ciglecours}{ABC100}
+\newcommand{\titrecours}{Titre du cours}
+\newcommand{\enseignant}{Enseignant}
+\newcommand{\titredocument}{Titre du travail}
+\newcommand{\dateremise}{Date de remise}
+
+% Fin %
+
+\def\iangle{35}
+\def\down{-90}
+\def\arcr{0.5cm}
+\author{\nom}
+\title{\ciglecours - \titredocument}
+\date{\today}
+
+\pagestyle{fancyplain}
+\thispagestyle{empty}
+
+\lhead{\ciglecours}
+\chead{}
+\rhead{\titredocument}
+
+\cfoot{Page \thepage\;de \pageref{LastPage}}
+
+\begin{document}
+
+\noindent
+\includegraphics[scale=0.80]{logo_ets.png} \\ \\
+{\bf \departement} \\
+Cours: \ciglecours\;-\;\titrecours \\
+Date de création: 25 septembre 2012 \\
+Dernière de la dernière mise à jour: \today \\
+
+\noindent
+{\Large \titredocument} \\
+
+\noindent
+\def\arraystretch{1.5}%
+\begin{tabularx}{\textwidth}{|X|X|}
+	\hline
+	\textbf{Nom} & \nom \\ \hline
+	\textbf{Code Permanent} & \codepermanent \\ \hline
+	\textbf{Cours} & \ciglecours \\ \hline
+	\textbf{Trimestre} & \trimestre \\ \hline
+	\textbf{Enseignant} & \enseignant \\ \hline
+	\textbf{Date de remise} & \dateremise \\ \hline
+\end{tabularx}
+
+\newpage
+
+\tableofcontents \clearpage
+
+\section{Introduction}
+...
+
+\end{document}
